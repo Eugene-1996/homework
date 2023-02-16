@@ -14,7 +14,7 @@ export type MessagePropsType = {
         
         message: {
             text: string
-        time: string
+            time: string
         }
         
     }
@@ -39,6 +39,9 @@ const Message = (props:MessagePropsType) => {
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
+            {/* <p>{props.message.message.time}</p>
+                <h2>Hello</h2> */}
+                
                 <p>{props.message.message.time}</p>
             </div>
         </div>

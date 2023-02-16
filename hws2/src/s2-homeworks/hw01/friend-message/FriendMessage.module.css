@@ -1,9 +1,10 @@
 .friendMessage {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     margin-top: 90px;
     padding-left: 120px ;   
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .friendImageAndText {
@@ -31,7 +32,6 @@
     padding-top: 8px;
     padding-left: 20px;
     font-size: 16px;
-    font-family: "Montserrat";
 }
 
 .friendText:after {
@@ -71,13 +71,10 @@
 }
 
 .friendTime {
-    /* display: flex;
-    justify-content: flex-start;
-    width: 30px;
-    margin-right: 1500px; */
-
+   
     display: flex;
     margin-left: 10px;
     font-size: 15px;
     font-weight: 600;
+    /* width: 100px; */
 }

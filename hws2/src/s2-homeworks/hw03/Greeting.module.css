@@ -1,22 +1,42 @@
+.hwTitle {
+    padding-left: 40px;
+}
+
+
 .greetingForm {
+    padding-left: 70px;
+   
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .error {
 }
 
 .input {
+    width: 372px;
+    height: 36px;
 }
 
 .input:focus {
 }
 
 .errorInput {
+    color: red;
+    width: 372px;
+    height: 36px;
 }
 
 .button {
+    background-color: #0066CC;
+    opacity: 50%;
+    margin-left: 15px;
+    width: 78px;
+    height: 36px;
+    color: white;
 }
 
 .button:focus {
@@ -29,6 +49,10 @@
 }
 
 .text {
+    color: gray;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
 }
 
 .greeting {

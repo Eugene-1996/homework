@@ -1,12 +1,11 @@
 .message {
     display: flex;
-    /* justify-content: flex-end; */
     margin-top: 24px;
-    margin-left: 635px;
-    padding-right: 81px ;
-    /* margin-bottom: 468px; */
-    /* align-items: center; */
+    /* margin-left: 635px; */
+    padding-right: 81px;
     flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
 }
 
 .imageAndText {
@@ -70,9 +69,10 @@ border-radius: 30px;
 }
 
 .time {
+ 
+
     display: flex;
-    margin-left: 1035px;
+    margin-right: 10px;
     font-size: 15px;
     font-weight: 600;
-    
 }
