@@ -17,6 +17,7 @@ export const pureAddUser = (name: string, setError: (value: React.SetStateAction
        addUserCallback(name)
       
     }
+     
     setName('')
 }
 
@@ -44,13 +45,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         // const nameNew = e.currentTarget.value
-        if(e.currentTarget.value === ''){
-            error && setError('Error')
-        }
-        else {
-            setName(e.currentTarget.value) // need to fix
-        }
+        // e.currentTarget.value === ''){
+            
         
+            setName(e.currentTarget.value) // need to fix
+        
+            error && setError('')
        
             // error && setError('Error')
         
@@ -60,7 +60,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
-        
     }
 
     const onBlur = () => {
@@ -71,7 +70,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnEnter(e, addUser)
     }
     let totalUsers = users.length // need to fix
-    const lastUserName = name // need to fix
+     const lastUserName = users.length ? users[users.length-1].name : ''
+     console.log(users) // need to fix
+    // need to fix
 
     return (
         <Greeting
