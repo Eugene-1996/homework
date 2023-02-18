@@ -32,8 +32,8 @@
 }
 
 .button {
-    background-color: #0066CC;
-    opacity: 50%;
+    background-color: rgb(17, 0, 169);
+    opacity: 100%;
     margin-left: 15px;
     width: 78px;
     height: 36px;
@@ -44,9 +44,14 @@
 }
 
 .button:active {
+    background-color: green;
+    opacity: 100%;
 }
 
 .button:disabled {
+    background-color: #0066CC;
+    opacity: 50%;
+
 }
 
 .text {
