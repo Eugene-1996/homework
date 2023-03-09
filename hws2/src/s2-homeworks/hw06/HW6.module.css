@@ -1,5 +1,27 @@
 .buttonsContainer {
-}
+    width: 300px;
+    margin-left: 70px;
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+
+}     
 
 .editableSpanContainer {
+    padding-left: 70px;
+    padding-top: 24px;
 }
+
+/* .hw {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#hw6 {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+} */
