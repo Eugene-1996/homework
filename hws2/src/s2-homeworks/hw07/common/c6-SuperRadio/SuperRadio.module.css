@@ -1,4 +1,7 @@
 .radio {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .radio::before {
@@ -9,7 +12,12 @@
 }
 
 .label {
+    display: flex;
+    /* flex-direction: column; */
+    padding-bottom: 20px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
 }
