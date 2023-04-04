@@ -15,7 +15,7 @@ function Clock() {
         // let weekDay = day === 1 ? 'Monday' : day === 2 ? 'Tuesday' : day === 3 ? 'Wednesday' : day === 4 ? 'Thursday' : day === 5 ? 'Friday' : 'Suturday'
         let weekDay = newDate.toLocaleDateString('en-US', { weekday: 'long' })
         let month = newDate.toLocaleDateString('en-US', { month: 'long' })
-        let numberDate = newDate.toLocaleDateString("US-en").replace(/['/']/gi, '.')
+        let numberDate = newDate.toLocaleDateString("en-US").replace(/['/']/gi, '.')
 
         let time = `${newDate.getHours() + ':' + newDate.getMinutes() + ':' + newDate.getSeconds()}`
         let fullDate = `${weekDay + ' ' + time + ' ' + month + ' ' + numberDate}`
