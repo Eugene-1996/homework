@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {AppStoreType} from './bll/store'
+import {AppStoreType, InitStateType} from './bll/store'
 import {loadingAC} from './bll/loadingReducer'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
@@ -12,15 +12,34 @@ import {Loader} from './Loader'
 * 3 - дописать функцию setLoading
 * 4 - сделать стили в соответствии с дизайном
 * */
+// export function TodolistWithRedux({todolist} : PropsType) {
+//     const {id, title, filter} = todolist
+//     let tasks = useSelector<AppRootStateType, TaskType[]>((state) => state.tasks[id])
+
+//     const dispatch = useDispatch()
+
+// const addTask = (title: string) => {
+//     // props.addTask(title, props.id);
+//     dispatch(addTaskAC(title, id))
+// }
+
+
 
 const HW10 = () => {
+    // let {} = isLoading
+    let isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     // useSelector, useDispatch // пишет студент
-    const isLoading = false
+    // isLoading = false
+    const dispatch = useDispatch()
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
-
+        dispatch(loadingAC(false))
         // setTimeout
+        setTimeout(() => {
+            dispatch(loadingAC(true))
+        }, 1500)
+
     }
 
     return (
