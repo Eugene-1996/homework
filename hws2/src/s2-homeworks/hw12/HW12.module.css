@@ -4,8 +4,8 @@
 }
 
 [data-theme='2'] {
-    --color: #000000;
-    --background: #DDEEFF;
+    --color: #ffffff;
+    --background: #003264;
 }
 
 [data-theme='3'] {
@@ -19,5 +19,5 @@ html {
 }
 
 .select {
-
+   
 }
