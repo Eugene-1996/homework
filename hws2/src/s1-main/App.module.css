@@ -12,6 +12,7 @@
 .hw {
 width: 20%;
 height: 40%;
+/* height: 300px; */
 display: flex;
 /* align-items: flex-end; */
 flex-direction: column;

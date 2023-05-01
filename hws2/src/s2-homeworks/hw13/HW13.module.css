@@ -1,7 +1,15 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 20px;
 }
 
 .responseContainer {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .imageContainer {
@@ -10,13 +18,22 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-self: center; */
 }
 
 .code {
+    color: red
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
 }
 .info {
+    display: flex;
+    flex-direction: column;
 }
